@@ -1,17 +1,19 @@
 import { Card } from './components/card'
-import { useState } from 'react'
+import { HeroSection } from './components/heroSection'
+// import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello world</h1>
+        <h1>Finance platform</h1>
       </header>
       <body className="Body">
-        <Card/>
+        <HeroSection className="Hero-section"/>
+        <Card style={{ backgroundColor: 'blue'}}/>
         <Card/>
         <Card/>
       </body>
